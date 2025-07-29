@@ -50,27 +50,27 @@ const Profile = () => {
       {/* Images Section */}
       <div
         id="images"
-        className={`flex md:items-start md:flex-row  ${styles.flexColumn} md:space-x-6 ${styles.marginBtwContent} ${styles.container}`}
+        className={`flex md:justify-between md:flex-row  ${styles.flexColumn} md:space-x-6 ${styles.marginBtwContent} ${styles.container}`}
       >
         <div
-          className={`rounded-2xl overflow-hidden ${styles.animationScroll} ${image1.isVisible ? styles.slideLeft : styles.slideRight}`}
+          className={`rounded-2xl  overflow-hidden ${styles.animationScroll} ${image1.isVisible ? styles.slideLeft : styles.slideRight}`}
           ref={image1.ref}
         >
           <img
             src={'/images/image1.jpg'}
             alt={'Team profile image'}
-            className={`${styles.imageProfile}`}
+            className={`w-auto h-[500px] object-cover`}
           />
         </div>
 
         <div
-          className={`rounded-2xl overflow-hidden ${styles.animationScroll} ${image2.isVisible ? styles.slideLeft : styles.slideRight}`}
+          className={`rounded-2xl  overflow-hidden ${styles.animationScroll} ${image2.isVisible ? styles.slideLeft : styles.slideRight}`}
           ref={image2.ref}
         >
           <img
             src={'/images/image2.webp'}
             alt={'Team profile image'}
-            className={`${styles.imageProfile}`}
+            className={`w-auto h-[500px] object-cover`}
           />
         </div>
       </div>
